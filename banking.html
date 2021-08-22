@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Welcome Banking System</title>
+</head>
+<body>
+    <header class="banking-header p-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome our banking system</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Account Balance Information-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Deposit</h4>
+                                <h5 class="card-text text-danger">$<span id="deposit_total" >100</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Withdraw</h5>
+                                <h5 class="card-text text-danger">$<span id="withdraw_total">00</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Balance</h4>
+                                <h5 class="card-text text-danger">$<span id="balance_total">200</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="card p-4">
+                            <div class="card-title">Deposit</div>
+                            <input type="number" class="form-control" name="deposit_amount" id="deposit_amount" required placeholder="Deposit Amount"/>
+                            <button id="deposit_btn" class="btn btn-success mt-3">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card p-4">
+                            <div class="card-title">Withdraw</div>
+                            <input type="number" class="form-control" name="withdraw_amount" id="withdraw_amount" required placeholder="Withdraw Amount"/>
+                            <button id="withdraw_btn" class="btn btn-success mt-3">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
