@@ -68,8 +68,6 @@ document.getElementById('deposit_btn').addEventListener('click', (e) => {
     // const currentTotalBalance = newDepositAmount + previousBalanceTotal
     // balanceTotal.innerText = currentTotalBalance;
 
-
-
 })
 
 // Handle Withdraw
@@ -81,8 +79,6 @@ document.getElementById('withdraw_btn').addEventListener('click', (e) => {
     // console.log('withdrawAmount: ', withdrawAmount)
     // // Clear Input Value of deposit
     // withdrawInput.value = ''
-
-
 
     // Plush Previous Withdraw and New Withdraw Amount
     // const withdrawTotal = document.getElementById('withdraw_total');
@@ -116,7 +112,4 @@ document.getElementById('withdraw_btn').addEventListener('click', (e) => {
    //  const currentTotalBalance = previousBalanceTotal - withdrawAmount
    //  balanceTotal.innerText = currentTotalBalance;
    //  console.log('Total Balance After Withdraw: ', currentTotalBalance )
-
-
-
 })

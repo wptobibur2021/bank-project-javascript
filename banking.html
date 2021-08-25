@@ -48,7 +48,6 @@
                 </div>
             </div>
         </section>
-
         <section class="p-5">
             <div class="container">
                 <div class="row">
@@ -56,20 +55,20 @@
                         <div class="card p-4">
                             <div class="card-title">Deposit</div>
                             <input type="number" class="form-control" name="deposit_amount" id="deposit_amount" required placeholder="Deposit Amount"/>
-                            <button id="deposit_btn" class="btn btn-success mt-3">Deposit</button>
+                            <button onclick="bankGetAmount('deposit_btn')" id="deposit_btn" class="btn btn-success mt-3">Deposit</button>
                         </div>
                     </div>
                     <div class="col-md-auto">
                         <div class="card p-4">
                             <div class="card-title">Withdraw</div>
                             <input type="number" class="form-control" name="withdraw_amount" id="withdraw_amount" required placeholder="Withdraw Amount"/>
-                            <button id="withdraw_btn" class="btn btn-success mt-3">Withdraw</button>
+                            <button onclick="bankGetAmount('withdraw_btn')"  id="withdraw_btn" class="btn btn-success mt-3">Withdraw</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="js/banking.js"></script>
+    <script src="js/functionality.js"></script>
 </body>
 </html>
